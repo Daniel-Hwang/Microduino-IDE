@@ -1,3 +1,4 @@
+#if defined(__AVR_ATmega128RFA1__)
 /* Copyright (c) 2009 Axel Wachtler
    All rights reserved.
 
@@ -435,3 +436,4 @@ radio_cca_t ret = RADIO_CCA_FREE;
 }
 #endif /*if defined(TRX_IF_RFA1) */
 /* EOF */
+#endif

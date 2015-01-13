@@ -1,3 +1,4 @@
+#if defined(__AVR_ATmega128RFA1__)
 /* Copyright (c) 2009 Axel Wachtler
    All rights reserved.
 
@@ -154,3 +155,4 @@ void trx_sram_read(trx_ramaddr_t addr, uint8_t length, uint8_t *data)
 }
 #endif /*if defined(TRX_IF_RFA1) */
 /* EOF */
+#endif

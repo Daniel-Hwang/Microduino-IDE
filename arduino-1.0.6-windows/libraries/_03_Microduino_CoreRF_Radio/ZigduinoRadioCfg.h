@@ -1,3 +1,4 @@
+#if defined(__AVR_ATmega128RFA1__)
 /* Copyright (c) 2011 Frank Zhao
    All rights reserved.
 
@@ -43,4 +44,5 @@
 #define ZR_RFTX_LED_OFF() do{PORTD&=~_BV(5);}while(0)
 
 #define ZigduinoRadioCfg_h
+#endif
 #endif

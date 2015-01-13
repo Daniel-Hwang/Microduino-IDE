@@ -1,3 +1,4 @@
+#if defined(__AVR_ATmega128RFA1__)
 /* Copyright (c) 2009 Axel Wachtler
    All rights reserved.
 
@@ -32,7 +33,6 @@
  * @brief Module for providing string translations of datarates.
  * @_addtogroup grpApp...
  */
-
 
 /* === includes ============================================================ */
 #include "ZigduinoRadioCfg.h"
@@ -220,3 +220,4 @@ uint8_t trx_get_datarate_str(uint8_t idx, char * rstr, uint8_t nlen)
     }
     return ret;
 }
+#endif

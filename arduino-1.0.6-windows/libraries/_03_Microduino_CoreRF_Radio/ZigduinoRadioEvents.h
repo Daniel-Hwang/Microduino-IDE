@@ -1,3 +1,4 @@
+#if defined(__AVR_ATmega128RFA1__)
 /* Copyright (c) 2011 Frank Zhao
    All rights reserved.
 
@@ -47,4 +48,5 @@ void zr_attach_tx_done(void (*)(radio_tx_done_t));
 #endif
 
 #define ZigduinoRadioEvents_h
+#endif
 #endif

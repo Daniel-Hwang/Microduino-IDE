@@ -1,3 +1,4 @@
+#if defined(__AVR_ATmega128RFA1__)
 /* Copyright (c) 2011 Frank Zhao
    All rights reserved.
 
@@ -111,4 +112,5 @@ class cZigduinoRadio
 extern cZigduinoRadio ZigduinoRadio; // make single instance accessible
 
 #define ZigduinoRadio_h
+#endif
 #endif

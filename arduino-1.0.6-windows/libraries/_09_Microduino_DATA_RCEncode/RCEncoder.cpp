@@ -72,13 +72,14 @@ static void ChannelStorePulseWidth(byte Channel, int microseconds) {
 // -----------------------------------------------------------------------------
 // turns on a Channels pulse of the specified length, on the specified pin
 void encoderWrite(byte channel, int microseconds) {
-
+/*
     if ( microseconds > MAX_CHANNEL_PULSE ) {
 	   microseconds = MAX_CHANNEL_PULSE;
     }
     else if ( microseconds < MIN_CHANNEL_PULSE ) {
 	   microseconds = MIN_CHANNEL_PULSE;
     }
+*/
     ChannelStorePulseWidth(channel, microseconds+FIX_CHANNEL_PULSE);
 }
 
@@ -90,7 +91,7 @@ void encoderBegin(byte pin) {
   
   // initialize pulse width data in Channel array.
   for (i=0; i < NBR_OF_CHANNELS; ++i)
-     ChannelStorePulseWidth(i, 1500);
+     ChannelStorePulseWidth(i, MID_CHANNEL_PULSE+FIX_CHANNEL_PULSE);
     
   ChannelStorePulseWidth(NBR_OF_CHANNELS, SYNC_PULSE_WIDTH);  // store sync pulse width
 

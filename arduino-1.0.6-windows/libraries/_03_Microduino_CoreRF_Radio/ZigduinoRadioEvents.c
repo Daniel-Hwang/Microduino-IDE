@@ -1,3 +1,4 @@
+#if defined(__AVR_ATmega128RFA1__)
 /* Copyright (c) 2011 Frank Zhao
    All rights reserved.
 
@@ -76,3 +77,4 @@ void zr_attach_tx_done(void (*funct)(radio_tx_done_t))
 {
 	user_radio_tx_done = funct;
 }
+#endif

@@ -1,3 +1,4 @@
+#if defined(__AVR_ATmega128RFA1__)
 /* Copyright (c) 2007-2009 Axel Wachtler
    All rights reserved.
 
@@ -484,3 +485,4 @@ void usr_radio_tx_done(radio_tx_done_t status);
 
 #endif  /* #ifndef RADIO_H */
 /* EOF */
+#endif

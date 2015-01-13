@@ -1,3 +1,4 @@
+#if defined(__AVR_ATmega128RFA1__)
 /* Copyright (c) 2007 Axel Wachtler
    All rights reserved.
 
@@ -32,6 +33,8 @@
  * @brief Interface for @ref grpTrx.
  * @ingroup grpTrx
  */
+
+
 #ifndef TRANSCEIVER_H
 #define TRANSCEIVER_H
 
@@ -589,3 +592,4 @@ static inline void trx_set_longaddr(uint64_t longaddr)
  *  @}
  */
 #endif /* TRANSCEIVER_H */
+#endif

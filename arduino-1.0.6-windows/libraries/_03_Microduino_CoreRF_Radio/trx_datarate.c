@@ -1,3 +1,4 @@
+#if defined(__AVR_ATmega128RFA1__)
 /* Copyright (c) 2009 Axel Wachtler
    All rights reserved.
 
@@ -166,3 +167,4 @@ uint8_t trx_get_datarate(void)
 
 
 #endif /* RADIO_TYPE == AT86RF212 */
+#endif

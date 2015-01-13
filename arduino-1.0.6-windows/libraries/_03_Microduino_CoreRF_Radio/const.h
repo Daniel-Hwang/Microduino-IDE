@@ -1,3 +1,4 @@
+#if defined(__AVR_ATmega128RFA1__)
 /* Copyright (c) 2007, 2008, 2009, 2010
     Marco Arena
     Axel Wachtler
@@ -199,3 +200,4 @@ typedef struct
 
 /** @} */
 #endif  /* #ifndef CONST_H */
+#endif

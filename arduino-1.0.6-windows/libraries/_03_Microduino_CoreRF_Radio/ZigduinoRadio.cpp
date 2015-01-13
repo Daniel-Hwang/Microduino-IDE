@@ -1,3 +1,4 @@
+#if defined(__AVR_ATmega128RFA1__)
 /* Copyright (c) 2011 Frank Zhao
    All rights reserved.
 
@@ -727,3 +728,4 @@ inline void cZigduinoRadio::waitTxDone(uint16_t timeout)
 
 // create single instance that is accessible to the user
 cZigduinoRadio ZigduinoRadio = cZigduinoRadio();
+#endif

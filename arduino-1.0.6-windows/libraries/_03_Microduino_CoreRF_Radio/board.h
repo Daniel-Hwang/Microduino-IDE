@@ -1,3 +1,4 @@
+#if defined(__AVR_ATmega128RFA1__)
 /* Copyright (c) 2007-2009 Axel Wachtler
    All rights reserved.
 
@@ -200,3 +201,4 @@ extern "C" {
 
 /** @} */
 #endif /* #ifndef BOARD_H */
+#endif

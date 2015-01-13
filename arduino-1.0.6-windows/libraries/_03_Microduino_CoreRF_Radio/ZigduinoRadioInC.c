@@ -1,3 +1,4 @@
+#if defined(__AVR_ATmega128RFA1__)
 /* Copyright (c) 2011 Frank Zhao
    All rights reserved.
 
@@ -690,3 +691,4 @@ inline void zr_waitTxDone(uint16_t timeout)
 	volatile uint16_t cnt = timeout;
 	while (zr_txIsBusy && cnt--);
 }
+#endif

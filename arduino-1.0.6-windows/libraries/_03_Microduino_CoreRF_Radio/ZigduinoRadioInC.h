@@ -1,3 +1,4 @@
+#if defined(__AVR_ATmega128RFA1__)
 /* Copyright (c) 2011 Frank Zhao
    All rights reserved.
 
@@ -74,4 +75,5 @@ int8_t zr_getLastEd();
 int8_t zr_getEdNow();
 
 #define ZigduinoRadioInC_h
+#endif
 #endif
