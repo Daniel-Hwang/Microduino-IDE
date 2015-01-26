@@ -34,12 +34,12 @@ void loop() {
   Serial.print("[Joystick] X: ");
   Serial.print(Joypad.readJoystickX());
   Serial.print(" ,Y: ");
-  Serial.println(Joypad.readJoystickX());
+  Serial.println(Joypad.readJoystickY());
 
   Serial.print("[Joystick1] X: ");
   Serial.print(Joypad.readJoystick1X());
   Serial.print(" ,Y: ");
-  Serial.println(Joypad.readJoystick1X());
+  Serial.println(Joypad.readJoystick1Y());
   
   Serial.print("[LightSensor]: ");
   Serial.println(Joypad.readLightSensor());
